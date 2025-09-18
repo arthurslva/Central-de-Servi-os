@@ -1,5 +1,5 @@
 :root {
-    --cor-primaria: #078d3f;
+    --cor-primaria: #0056b3;
     --cor-secundaria: #e2e6ea;
     --cor-fundo: #f4f7f6;
     --cor-texto: #333;
@@ -123,14 +123,14 @@ body {
     color: #666;
 }
 
-.formulario-solicitacao {
+.conteudo-card {
     background-color: #fff;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.formulario-solicitacao h2 {
+.conteudo-card h2 {
     text-align: center;
     color: var(--cor-primaria);
 }
@@ -146,7 +146,8 @@ body {
 }
 
 .grupo-campo input,
-.grupo-campo textarea {
+.grupo-campo textarea,
+.grupo-campo select {
     width: 100%;
     padding: 10px;
     border: 1px solid #ccc;
@@ -166,7 +167,29 @@ body {
     text-align: center;
 }
 
-.opcoes-formulario .opcao input {
+.opcoes-formulario .opcao input,
+.opcoes-formulario .opcao select {
     display: block;
     width: 100%;
+}
+
+.conteudo-card button {
+    margin-top: 20px;
+    width: 100%;
+    padding: 15px;
+    background-color: var(--cor-primaria);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.conteudo-card button:hover {
+    background-color: #004494;
+}
+
+/* Classe CSS para esconder elementos */
+.oculto {
+    display: none;
 }
